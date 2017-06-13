@@ -10,6 +10,7 @@ import os
 import sys
 import logging
 import subprocess
+import re
 from configobj import ConfigObj
 
 
@@ -48,17 +49,29 @@ class Subcfg(Basecfg):
 		self.subname	= subname;
 		self.subtdir	= subbase['tdir'];
 		self.subcdir	= subbase['cdir'];
-		self.target		= subbase['target'];
 		self.cmd		= subbase['cmd'];
 		self.move		= subbase['move'];
 		self.deps		= subbase['deps'];
+		target_list		= subbase['target'];
 		
 		self.fulltdir	= self.tdir + self.subtdir;
 		self.fullcdir	= self.cdir + self.subcdir;
-		self.movecmd    = [];
 
+		self.target		= [];
+		self.target_attr= [];
+		pattern = re.compile(r'^<(.*)>$');
+
+		for tglist in target_list:
+			match = pattern.match(tglist);
+			if match:
+				self.target_attr.append('dir');
+				self.target.append(pattern.sub(r'\1', tglist));
+			else:
+				self.target_attr.append('file');
+				self.target.append(tglist);
+
+		self.movecmd    = [];
 		for target in self.target:
-			##self.movecmd.append('mv '	+ self.fullcdir + '/' + target + ' ' + self.fulltdir);
 			self.movecmd.append('cp '	+ self.fullcdir + '/' + target + ' ' + self.fulltdir + ' -rf');
 
 	def prepare(self):
@@ -80,19 +93,31 @@ class Subcfg(Basecfg):
 				sys.exit(0);
 		
 		for target in self.target:
-			if not os.path.isfile(self.fullcdir+'/'+target):
-				logging.error('[%s]: target %s is missing' %(self.subname, target));
-				sys.exit(0);
+			if self.target_attr == 'file':
+				if not os.path.isfile(self.fullcdir + '/' + target):
+					logging.error('[%s]: target %s is missing' %(self.subname, target));
+					sys.exit(0);
+
+			if self.target_attr == 'dir':
+				if not os.path.isdir(self.fullcdir + '/' + target):
+					logging.error('[%s]: target %s is missing' %(self.subname, target));
+					sys.exit(0);
 
 	def domove(self):
 		if self.move == 'yes':
 			for cmd in self.movecmd:
-				subprocess.Popen(cmd, stdin = subprocess.PIPE, stdout = subprocess.PIPE, stderr = None, shell = True);
+				ret = subprocess.Popen(cmd, stdin = subprocess.PIPE, stdout = subprocess.PIPE, stderr = subprocess.PIPE, shell = True).stderr.read();
+				if not ret.find('No such file or directory') < 0:
+					logging.debug(ret);
+					logging.error('[%s]: exec cmd %s is error!' %(self.subname, cmd));
+					sys.exit(0);
+
 		logging.info('[%s]: is success!' %(self.subname));
 
 	def show(self):
 		logging.debug('sub module [%s]:' %(self.subname));
 		logging.debug('%-15s target:		%r' %(self.subname, self.target)); 
+		logging.debug('%-15s target_attr:	%r' %(self.subname, self.target_attr)); 
 		logging.debug('%-15s cmd:			%r' %(self.subname, self.cmd));  
 		logging.debug('%-15s move:			%r' %(self.subname, self.move));  
 		logging.debug('%-15s deps:			%r' %(self.subname, self.deps));  

@@ -2,9 +2,10 @@ parsecfg.py DEBUG base module [BASE]:
 parsecfg.py DEBUG base tdir:			'/mtx_5x9_panlin/'
 parsecfg.py DEBUG base cdir:			'/root/mtxcode/head/mtx/code/'
 parsecfg.py DEBUG base main:			'mtx_5x9'
-parsecfg.py DEBUG base sub:			['mtx', 'smtpfs_eb', 'smtpfs', 'pop3fs_eb', 'pop3fs', 'imapfs_eb', 'imapfs', 'httpfs_eb', 'httpfs', 'conn', 'netflow', 'ftpctl', 'tcpstream', 'charset', 'dns', 'dns_block', 'dpdkprx', 'netflow_icmp', 'map', 'mapbase', 'nasm', 'perform', 'spooky', 'tcp_block', 'tcpdump', 'record2k', 'record5k', 'dpdk', 'dpdkstat', 'filefilter', 'fileidt', 'geoip', 'hsctd', 'mnthread', 'txburst', 'zfd']
+parsecfg.py DEBUG base sub:			['mtx', 'smtpfs_eb', 'smtpfs', 'pop3fs_eb', 'pop3fs', 'imapfs_eb', 'imapfs', 'httpfs_eb', 'httpfs', 'conn', 'netflow', 'ftpctl', 'tcpstream', 'charset', 'dns', 'dns_block', 'dpdkprx', 'netflow_icmp', 'map', 'mapbase', 'nasm', 'perform', 'spooky', 'tcp_block', 'tcpdump', 'record2k', 'record5k', 'dpdk', 'dpdkstat', 'filefilter', 'fileidt', 'geoip', 'hsctd', 'mnthread', 'txburst', 'zfd', 'so']
 parsecfg.py DEBUG sub module [mtx]:
 parsecfg.py DEBUG mtx             target:		['mtx']
+parsecfg.py DEBUG mtx             target_attr:	['file']
 parsecfg.py DEBUG mtx             cmd:			['make clean', 'make deps', 'make debug']
 parsecfg.py DEBUG mtx             move:			'yes'
 parsecfg.py DEBUG mtx             deps:			''
@@ -14,6 +15,7 @@ parsecfg.py DEBUG mtx             movecmd:		['cp /root/mtxcode/head/mtx/code/mtx
 parsecfg.py INFO [mtx]: is success!
 parsecfg.py DEBUG sub module [smtpfs_eb]:
 parsecfg.py DEBUG smtpfs_eb       target:		['smtpfs_eb.so']
+parsecfg.py DEBUG smtpfs_eb       target_attr:	['file']
 parsecfg.py DEBUG smtpfs_eb       cmd:			['make clean', 'make debug']
 parsecfg.py DEBUG smtpfs_eb       move:			'yes'
 parsecfg.py DEBUG smtpfs_eb       deps:			''
@@ -23,6 +25,7 @@ parsecfg.py DEBUG smtpfs_eb       movecmd:		['cp /root/mtxcode/head/mtx/code/ssn
 parsecfg.py INFO [smtpfs_eb]: is success!
 parsecfg.py DEBUG sub module [smtpfs]:
 parsecfg.py DEBUG smtpfs          target:		['smtpfs.so']
+parsecfg.py DEBUG smtpfs          target_attr:	['file']
 parsecfg.py DEBUG smtpfs          cmd:			['make clean', 'make debug']
 parsecfg.py DEBUG smtpfs          move:			'yes'
 parsecfg.py DEBUG smtpfs          deps:			''
@@ -32,6 +35,7 @@ parsecfg.py DEBUG smtpfs          movecmd:		['cp /root/mtxcode/head/mtx/code/ssn
 parsecfg.py INFO [smtpfs]: is success!
 parsecfg.py DEBUG sub module [pop3fs_eb]:
 parsecfg.py DEBUG pop3fs_eb       target:		['pop3fs_eb.so']
+parsecfg.py DEBUG pop3fs_eb       target_attr:	['file']
 parsecfg.py DEBUG pop3fs_eb       cmd:			['make clean', 'make debug']
 parsecfg.py DEBUG pop3fs_eb       move:			'yes'
 parsecfg.py DEBUG pop3fs_eb       deps:			''
@@ -41,6 +45,7 @@ parsecfg.py DEBUG pop3fs_eb       movecmd:		['cp /root/mtxcode/head/mtx/code/ssn
 parsecfg.py INFO [pop3fs_eb]: is success!
 parsecfg.py DEBUG sub module [pop3fs]:
 parsecfg.py DEBUG pop3fs          target:		['pop3fs.so']
+parsecfg.py DEBUG pop3fs          target_attr:	['file']
 parsecfg.py DEBUG pop3fs          cmd:			['make clean', 'make debug']
 parsecfg.py DEBUG pop3fs          move:			'yes'
 parsecfg.py DEBUG pop3fs          deps:			''
@@ -50,6 +55,7 @@ parsecfg.py DEBUG pop3fs          movecmd:		['cp /root/mtxcode/head/mtx/code/ssn
 parsecfg.py INFO [pop3fs]: is success!
 parsecfg.py DEBUG sub module [imapfs_eb]:
 parsecfg.py DEBUG imapfs_eb       target:		['imapfs_eb.so']
+parsecfg.py DEBUG imapfs_eb       target_attr:	['file']
 parsecfg.py DEBUG imapfs_eb       cmd:			['make clean', 'make debug']
 parsecfg.py DEBUG imapfs_eb       move:			'yes'
 parsecfg.py DEBUG imapfs_eb       deps:			''
@@ -59,6 +65,7 @@ parsecfg.py DEBUG imapfs_eb       movecmd:		['cp /root/mtxcode/head/mtx/code/ssn
 parsecfg.py INFO [imapfs_eb]: is success!
 parsecfg.py DEBUG sub module [imapfs]:
 parsecfg.py DEBUG imapfs          target:		['imapfs.so']
+parsecfg.py DEBUG imapfs          target_attr:	['file']
 parsecfg.py DEBUG imapfs          cmd:			['make clean', 'make debug']
 parsecfg.py DEBUG imapfs          move:			'yes'
 parsecfg.py DEBUG imapfs          deps:			''
@@ -68,6 +75,7 @@ parsecfg.py DEBUG imapfs          movecmd:		['cp /root/mtxcode/head/mtx/code/ssn
 parsecfg.py INFO [imapfs]: is success!
 parsecfg.py DEBUG sub module [httpfs_eb]:
 parsecfg.py DEBUG httpfs_eb       target:		['httpfs_eb.so']
+parsecfg.py DEBUG httpfs_eb       target_attr:	['file']
 parsecfg.py DEBUG httpfs_eb       cmd:			['make clean', 'make debug']
 parsecfg.py DEBUG httpfs_eb       move:			'yes'
 parsecfg.py DEBUG httpfs_eb       deps:			''
@@ -77,6 +85,7 @@ parsecfg.py DEBUG httpfs_eb       movecmd:		['cp /root/mtxcode/head/mtx/code/ssn
 parsecfg.py INFO [httpfs_eb]: is success!
 parsecfg.py DEBUG sub module [httpfs]:
 parsecfg.py DEBUG httpfs          target:		['httpfs.so']
+parsecfg.py DEBUG httpfs          target_attr:	['file']
 parsecfg.py DEBUG httpfs          cmd:			['make clean', 'make debug']
 parsecfg.py DEBUG httpfs          move:			'yes'
 parsecfg.py DEBUG httpfs          deps:			''
@@ -86,6 +95,7 @@ parsecfg.py DEBUG httpfs          movecmd:		['cp /root/mtxcode/head/mtx/code/ssn
 parsecfg.py INFO [httpfs]: is success!
 parsecfg.py DEBUG sub module [conn]:
 parsecfg.py DEBUG conn            target:		['conn.so']
+parsecfg.py DEBUG conn            target_attr:	['file']
 parsecfg.py DEBUG conn            cmd:			['make clean', 'make debug']
 parsecfg.py DEBUG conn            move:			'yes'
 parsecfg.py DEBUG conn            deps:			''
@@ -93,3 +103,303 @@ parsecfg.py DEBUG conn            fulltdir:		'/mtx_5x9_panlin/ssnalgo'
 parsecfg.py DEBUG conn            fullcdir:		'/root/mtxcode/head/mtx/code/ssnalgo/conn'
 parsecfg.py DEBUG conn            movecmd:		['cp /root/mtxcode/head/mtx/code/ssnalgo/conn/conn.so /mtx_5x9_panlin/ssnalgo -rf']
 parsecfg.py INFO [conn]: is success!
+parsecfg.py DEBUG sub module [netflow_tool]:
+parsecfg.py DEBUG netflow_tool    target:		['netflow_file']
+parsecfg.py DEBUG netflow_tool    target_attr:	['file']
+parsecfg.py DEBUG netflow_tool    cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG netflow_tool    move:			'yes'
+parsecfg.py DEBUG netflow_tool    deps:			''
+parsecfg.py DEBUG netflow_tool    fulltdir:		'/mtx_5x9_panlin/./'
+parsecfg.py DEBUG netflow_tool    fullcdir:		'/root/mtxcode/head/mtx/code/ssnalgo/netflow/tools'
+parsecfg.py DEBUG netflow_tool    movecmd:		['cp /root/mtxcode/head/mtx/code/ssnalgo/netflow/tools/netflow_file /mtx_5x9_panlin/./ -rf']
+parsecfg.py INFO [netflow_tool]: is success!
+parsecfg.py DEBUG sub module [netflow]:
+parsecfg.py DEBUG netflow         target:		['netflow9.so']
+parsecfg.py DEBUG netflow         target_attr:	['file']
+parsecfg.py DEBUG netflow         cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG netflow         move:			'yes'
+parsecfg.py DEBUG netflow         deps:			['netflow_tool']
+parsecfg.py DEBUG netflow         fulltdir:		'/mtx_5x9_panlin/ssnalgo'
+parsecfg.py DEBUG netflow         fullcdir:		'/root/mtxcode/head/mtx/code/ssnalgo/netflow'
+parsecfg.py DEBUG netflow         movecmd:		['cp /root/mtxcode/head/mtx/code/ssnalgo/netflow/netflow9.so /mtx_5x9_panlin/ssnalgo -rf']
+parsecfg.py INFO [netflow]: is success!
+parsecfg.py DEBUG sub module [ftpctl]:
+parsecfg.py DEBUG ftpctl          target:		['ftpctl.so']
+parsecfg.py DEBUG ftpctl          target_attr:	['file']
+parsecfg.py DEBUG ftpctl          cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG ftpctl          move:			'yes'
+parsecfg.py DEBUG ftpctl          deps:			''
+parsecfg.py DEBUG ftpctl          fulltdir:		'/mtx_5x9_panlin/ssnalgo'
+parsecfg.py DEBUG ftpctl          fullcdir:		'/root/mtxcode/head/mtx/code/ssnalgo/ftpctl'
+parsecfg.py DEBUG ftpctl          movecmd:		['cp /root/mtxcode/head/mtx/code/ssnalgo/ftpctl/ftpctl.so /mtx_5x9_panlin/ssnalgo -rf']
+parsecfg.py INFO [ftpctl]: is success!
+parsecfg.py DEBUG sub module [tcpstream]:
+parsecfg.py DEBUG tcpstream       target:		['tcpstream.so']
+parsecfg.py DEBUG tcpstream       target_attr:	['file']
+parsecfg.py DEBUG tcpstream       cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG tcpstream       move:			'yes'
+parsecfg.py DEBUG tcpstream       deps:			''
+parsecfg.py DEBUG tcpstream       fulltdir:		'/mtx_5x9_panlin/ssnalgo'
+parsecfg.py DEBUG tcpstream       fullcdir:		'/root/mtxcode/head/mtx/code/ssnalgo/tcpstream'
+parsecfg.py DEBUG tcpstream       movecmd:		['cp /root/mtxcode/head/mtx/code/ssnalgo/tcpstream/tcpstream.so /mtx_5x9_panlin/ssnalgo -rf']
+parsecfg.py INFO [tcpstream]: is success!
+parsecfg.py DEBUG sub module [charset]:
+parsecfg.py DEBUG charset         target:		['charset.so']
+parsecfg.py DEBUG charset         target_attr:	['file']
+parsecfg.py DEBUG charset         cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG charset         move:			'yes'
+parsecfg.py DEBUG charset         deps:			''
+parsecfg.py DEBUG charset         fulltdir:		'/mtx_5x9_panlin/plugin'
+parsecfg.py DEBUG charset         fullcdir:		'/root/mtxcode/head/mtx/code/plugin/charset2'
+parsecfg.py DEBUG charset         movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/charset2/charset.so /mtx_5x9_panlin/plugin -rf']
+parsecfg.py INFO [charset]: is success!
+parsecfg.py DEBUG sub module [dns]:
+parsecfg.py DEBUG dns             target:		['dns.so']
+parsecfg.py DEBUG dns             target_attr:	['file']
+parsecfg.py DEBUG dns             cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG dns             move:			'yes'
+parsecfg.py DEBUG dns             deps:			''
+parsecfg.py DEBUG dns             fulltdir:		'/mtx_5x9_panlin/plugin'
+parsecfg.py DEBUG dns             fullcdir:		'/root/mtxcode/head/mtx/code/plugin/dns'
+parsecfg.py DEBUG dns             movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/dns/dns.so /mtx_5x9_panlin/plugin -rf']
+parsecfg.py INFO [dns]: is success!
+parsecfg.py DEBUG sub module [dns_block]:
+parsecfg.py DEBUG dns_block       target:		['dns_block.so']
+parsecfg.py DEBUG dns_block       target_attr:	['file']
+parsecfg.py DEBUG dns_block       cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG dns_block       move:			'yes'
+parsecfg.py DEBUG dns_block       deps:			''
+parsecfg.py DEBUG dns_block       fulltdir:		'/mtx_5x9_panlin/plugin'
+parsecfg.py DEBUG dns_block       fullcdir:		'/root/mtxcode/head/mtx/code/plugin/dns_block'
+parsecfg.py DEBUG dns_block       movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/dns_block/dns_block.so /mtx_5x9_panlin/plugin -rf']
+parsecfg.py INFO [dns_block]: is success!
+parsecfg.py DEBUG sub module [dpdkprx]:
+parsecfg.py DEBUG dpdkprx         target:		['dpdkprx.so']
+parsecfg.py DEBUG dpdkprx         target_attr:	['file']
+parsecfg.py DEBUG dpdkprx         cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG dpdkprx         move:			'yes'
+parsecfg.py DEBUG dpdkprx         deps:			''
+parsecfg.py DEBUG dpdkprx         fulltdir:		'/mtx_5x9_panlin/plugin'
+parsecfg.py DEBUG dpdkprx         fullcdir:		'/root/mtxcode/head/mtx/code/plugin/dpdkprx'
+parsecfg.py DEBUG dpdkprx         movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/dpdkprx/dpdkprx.so /mtx_5x9_panlin/plugin -rf']
+parsecfg.py INFO [dpdkprx]: is success!
+parsecfg.py DEBUG sub module [netflow_icmp]:
+parsecfg.py DEBUG netflow_icmp    target:		['icmp_netflow.so']
+parsecfg.py DEBUG netflow_icmp    target_attr:	['file']
+parsecfg.py DEBUG netflow_icmp    cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG netflow_icmp    move:			'yes'
+parsecfg.py DEBUG netflow_icmp    deps:			''
+parsecfg.py DEBUG netflow_icmp    fulltdir:		'/mtx_5x9_panlin/plugin'
+parsecfg.py DEBUG netflow_icmp    fullcdir:		'/root/mtxcode/head/mtx/code/plugin/netflow_icmp'
+parsecfg.py DEBUG netflow_icmp    movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/netflow_icmp/icmp_netflow.so /mtx_5x9_panlin/plugin -rf']
+parsecfg.py INFO [netflow_icmp]: is success!
+parsecfg.py DEBUG sub module [map]:
+parsecfg.py DEBUG map             target:		['map.so']
+parsecfg.py DEBUG map             target_attr:	['file']
+parsecfg.py DEBUG map             cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG map             move:			'yes'
+parsecfg.py DEBUG map             deps:			''
+parsecfg.py DEBUG map             fulltdir:		'/mtx_5x9_panlin/plugin'
+parsecfg.py DEBUG map             fullcdir:		'/root/mtxcode/head/mtx/code/plugin/map'
+parsecfg.py DEBUG map             movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/map/map.so /mtx_5x9_panlin/plugin -rf']
+parsecfg.py INFO [map]: is success!
+parsecfg.py DEBUG sub module [mapbase]:
+parsecfg.py DEBUG mapbase         target:		['mapbase.so']
+parsecfg.py DEBUG mapbase         target_attr:	['file']
+parsecfg.py DEBUG mapbase         cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG mapbase         move:			'yes'
+parsecfg.py DEBUG mapbase         deps:			''
+parsecfg.py DEBUG mapbase         fulltdir:		'/mtx_5x9_panlin/plugin'
+parsecfg.py DEBUG mapbase         fullcdir:		'/root/mtxcode/head/mtx/code/plugin/mapbase'
+parsecfg.py DEBUG mapbase         movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/mapbase/mapbase.so /mtx_5x9_panlin/plugin -rf']
+parsecfg.py INFO [mapbase]: is success!
+parsecfg.py DEBUG sub module [nasm]:
+parsecfg.py DEBUG nasm            target:		['nasm.so']
+parsecfg.py DEBUG nasm            target_attr:	['file']
+parsecfg.py DEBUG nasm            cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG nasm            move:			'yes'
+parsecfg.py DEBUG nasm            deps:			''
+parsecfg.py DEBUG nasm            fulltdir:		'/mtx_5x9_panlin/plugin'
+parsecfg.py DEBUG nasm            fullcdir:		'/root/mtxcode/head/mtx/code/plugin/nasm'
+parsecfg.py DEBUG nasm            movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/nasm/nasm.so /mtx_5x9_panlin/plugin -rf']
+parsecfg.py INFO [nasm]: is success!
+parsecfg.py DEBUG sub module [perform]:
+parsecfg.py DEBUG perform         target:		['perform.so']
+parsecfg.py DEBUG perform         target_attr:	['file']
+parsecfg.py DEBUG perform         cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG perform         move:			'yes'
+parsecfg.py DEBUG perform         deps:			''
+parsecfg.py DEBUG perform         fulltdir:		'/mtx_5x9_panlin/plugin'
+parsecfg.py DEBUG perform         fullcdir:		'/root/mtxcode/head/mtx/code/plugin/perform'
+parsecfg.py DEBUG perform         movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/perform/perform.so /mtx_5x9_panlin/plugin -rf']
+parsecfg.py INFO [perform]: is success!
+parsecfg.py DEBUG sub module [spooky]:
+parsecfg.py DEBUG spooky          target:		['spooky.so']
+parsecfg.py DEBUG spooky          target_attr:	['file']
+parsecfg.py DEBUG spooky          cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG spooky          move:			'yes'
+parsecfg.py DEBUG spooky          deps:			''
+parsecfg.py DEBUG spooky          fulltdir:		'/mtx_5x9_panlin/plugin'
+parsecfg.py DEBUG spooky          fullcdir:		'/root/mtxcode/head/mtx/code/plugin/spooky'
+parsecfg.py DEBUG spooky          movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/spooky/spooky.so /mtx_5x9_panlin/plugin -rf']
+parsecfg.py INFO [spooky]: is success!
+parsecfg.py DEBUG sub module [tcp_block]:
+parsecfg.py DEBUG tcp_block       target:		['tcp_block.so']
+parsecfg.py DEBUG tcp_block       target_attr:	['file']
+parsecfg.py DEBUG tcp_block       cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG tcp_block       move:			'yes'
+parsecfg.py DEBUG tcp_block       deps:			''
+parsecfg.py DEBUG tcp_block       fulltdir:		'/mtx_5x9_panlin/plugin'
+parsecfg.py DEBUG tcp_block       fullcdir:		'/root/mtxcode/head/mtx/code/plugin/http_block'
+parsecfg.py DEBUG tcp_block       movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/http_block/tcp_block.so /mtx_5x9_panlin/plugin -rf']
+parsecfg.py INFO [tcp_block]: is success!
+parsecfg.py DEBUG sub module [tcpdump]:
+parsecfg.py DEBUG tcpdump         target:		['tcpdump.so']
+parsecfg.py DEBUG tcpdump         target_attr:	['file']
+parsecfg.py DEBUG tcpdump         cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG tcpdump         move:			'yes'
+parsecfg.py DEBUG tcpdump         deps:			''
+parsecfg.py DEBUG tcpdump         fulltdir:		'/mtx_5x9_panlin/plugin'
+parsecfg.py DEBUG tcpdump         fullcdir:		'/root/mtxcode/head/mtx/code/plugin/tcpdump2'
+parsecfg.py DEBUG tcpdump         movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/tcpdump2/tcpdump.so /mtx_5x9_panlin/plugin -rf']
+parsecfg.py INFO [tcpdump]: is success!
+parsecfg.py DEBUG sub module [record2k]:
+parsecfg.py DEBUG record2k        target:		['tdsvc.so']
+parsecfg.py DEBUG record2k        target_attr:	['file']
+parsecfg.py DEBUG record2k        cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG record2k        move:			'yes'
+parsecfg.py DEBUG record2k        deps:			''
+parsecfg.py DEBUG record2k        fulltdir:		'/mtx_5x9_panlin/plugin'
+parsecfg.py DEBUG record2k        fullcdir:		'/root/mtxcode/head/mtx/code/plugin/record2k'
+parsecfg.py DEBUG record2k        movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/record2k/tdsvc.so /mtx_5x9_panlin/plugin -rf']
+parsecfg.py INFO [record2k]: is success!
+parsecfg.py DEBUG sub module [record5k]:
+parsecfg.py DEBUG record5k        target:		['tdsvc5k.so']
+parsecfg.py DEBUG record5k        target_attr:	['file']
+parsecfg.py DEBUG record5k        cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG record5k        move:			'yes'
+parsecfg.py DEBUG record5k        deps:			''
+parsecfg.py DEBUG record5k        fulltdir:		'/mtx_5x9_panlin/plugin'
+parsecfg.py DEBUG record5k        fullcdir:		'/root/mtxcode/head/mtx/code/plugin/record5k'
+parsecfg.py DEBUG record5k        movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/record5k/tdsvc5k.so /mtx_5x9_panlin/plugin -rf']
+parsecfg.py INFO [record5k]: is success!
+parsecfg.py DEBUG sub module [dpdk]:
+parsecfg.py DEBUG dpdk            target:		['dpdk_drv3.so', 'dpdk_ifg']
+parsecfg.py DEBUG dpdk            target_attr:	['file', 'file']
+parsecfg.py DEBUG dpdk            cmd:			['make clean', 'make debug', 'make dpdk_ifg']
+parsecfg.py DEBUG dpdk            move:			'yes'
+parsecfg.py DEBUG dpdk            deps:			''
+parsecfg.py DEBUG dpdk            fulltdir:		'/mtx_5x9_panlin/dpdk'
+parsecfg.py DEBUG dpdk            fullcdir:		'/root/mtxcode/head/mtx/code/driver/dpdk3'
+parsecfg.py DEBUG dpdk            movecmd:		['cp /root/mtxcode/head/mtx/code/driver/dpdk3/dpdk_drv3.so /mtx_5x9_panlin/dpdk -rf', 'cp /root/mtxcode/head/mtx/code/driver/dpdk3/dpdk_ifg /mtx_5x9_panlin/dpdk -rf']
+parsecfg.py INFO [dpdk]: is success!
+parsecfg.py DEBUG sub module [dpdkstat]:
+parsecfg.py DEBUG dpdkstat        target:		['dpdkstat.so']
+parsecfg.py DEBUG dpdkstat        target_attr:	['file']
+parsecfg.py DEBUG dpdkstat        cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG dpdkstat        move:			'yes'
+parsecfg.py DEBUG dpdkstat        deps:			''
+parsecfg.py DEBUG dpdkstat        fulltdir:		'/mtx_5x9_panlin/dpdkstat'
+parsecfg.py DEBUG dpdkstat        fullcdir:		'/root/mtxcode/head/mtx/code/plugin/dpdkstat'
+parsecfg.py DEBUG dpdkstat        movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/dpdkstat/dpdkstat.so /mtx_5x9_panlin/dpdkstat -rf']
+parsecfg.py INFO [dpdkstat]: is success!
+parsecfg.py DEBUG sub module [filefilter]:
+parsecfg.py DEBUG filefilter      target:		['filefilter.so']
+parsecfg.py DEBUG filefilter      target_attr:	['file']
+parsecfg.py DEBUG filefilter      cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG filefilter      move:			'yes'
+parsecfg.py DEBUG filefilter      deps:			''
+parsecfg.py DEBUG filefilter      fulltdir:		'/mtx_5x9_panlin/filefilter'
+parsecfg.py DEBUG filefilter      fullcdir:		'/root/mtxcode/head/mtx/code/plugin/filefilter'
+parsecfg.py DEBUG filefilter      movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/filefilter/filefilter.so /mtx_5x9_panlin/filefilter -rf']
+parsecfg.py INFO [filefilter]: is success!
+parsecfg.py DEBUG sub module [fileidt]:
+parsecfg.py DEBUG fileidt         target:		['fileidt.so']
+parsecfg.py DEBUG fileidt         target_attr:	['file']
+parsecfg.py DEBUG fileidt         cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG fileidt         move:			'yes'
+parsecfg.py DEBUG fileidt         deps:			''
+parsecfg.py DEBUG fileidt         fulltdir:		'/mtx_5x9_panlin/fileidt'
+parsecfg.py DEBUG fileidt         fullcdir:		'/root/mtxcode/head/mtx/code/plugin/fileidt'
+parsecfg.py DEBUG fileidt         movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/fileidt/fileidt.so /mtx_5x9_panlin/fileidt -rf']
+parsecfg.py INFO [fileidt]: is success!
+parsecfg.py DEBUG sub module [geoip]:
+parsecfg.py DEBUG geoip           target:		['libgeoip.so']
+parsecfg.py DEBUG geoip           target_attr:	['file']
+parsecfg.py DEBUG geoip           cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG geoip           move:			'yes'
+parsecfg.py DEBUG geoip           deps:			''
+parsecfg.py DEBUG geoip           fulltdir:		'/mtx_5x9_panlin/geoip'
+parsecfg.py DEBUG geoip           fullcdir:		'/root/mtxcode/head/mtx/code/geoip/cert5x9'
+parsecfg.py DEBUG geoip           movecmd:		['cp /root/mtxcode/head/mtx/code/geoip/cert5x9/libgeoip.so /mtx_5x9_panlin/geoip -rf']
+parsecfg.py INFO [geoip]: is success!
+parsecfg.py DEBUG sub module [hsctd]:
+parsecfg.py DEBUG hsctd           target:		['hsctd1.so', 'hsctd2.so', 'hsctd3.so', 'hsctd12.so', 'hsctd23.so']
+parsecfg.py DEBUG hsctd           target_attr:	['file', 'file', 'file', 'file', 'file']
+parsecfg.py DEBUG hsctd           cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG hsctd           move:			'yes'
+parsecfg.py DEBUG hsctd           deps:			''
+parsecfg.py DEBUG hsctd           fulltdir:		'/mtx_5x9_panlin/hsctd'
+parsecfg.py DEBUG hsctd           fullcdir:		'/root/mtxcode/head/mtx/code/ctplug/hyperscan'
+parsecfg.py DEBUG hsctd           movecmd:		['cp /root/mtxcode/head/mtx/code/ctplug/hyperscan/hsctd1.so /mtx_5x9_panlin/hsctd -rf', 'cp /root/mtxcode/head/mtx/code/ctplug/hyperscan/hsctd2.so /mtx_5x9_panlin/hsctd -rf', 'cp /root/mtxcode/head/mtx/code/ctplug/hyperscan/hsctd3.so /mtx_5x9_panlin/hsctd -rf', 'cp /root/mtxcode/head/mtx/code/ctplug/hyperscan/hsctd12.so /mtx_5x9_panlin/hsctd -rf', 'cp /root/mtxcode/head/mtx/code/ctplug/hyperscan/hsctd23.so /mtx_5x9_panlin/hsctd -rf']
+parsecfg.py INFO [hsctd]: is success!
+parsecfg.py DEBUG sub module [mnthread]:
+parsecfg.py DEBUG mnthread        target:		['mnthread.so', 'mnsvc']
+parsecfg.py DEBUG mnthread        target_attr:	['file', 'file']
+parsecfg.py DEBUG mnthread        cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG mnthread        move:			'yes'
+parsecfg.py DEBUG mnthread        deps:			''
+parsecfg.py DEBUG mnthread        fulltdir:		'/mtx_5x9_panlin/mnthread'
+parsecfg.py DEBUG mnthread        fullcdir:		'/root/mtxcode/head/mtx/code/plugin/mnthread'
+parsecfg.py DEBUG mnthread        movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/mnthread/mnthread.so /mtx_5x9_panlin/mnthread -rf', 'cp /root/mtxcode/head/mtx/code/plugin/mnthread/mnsvc /mtx_5x9_panlin/mnthread -rf']
+parsecfg.py INFO [mnthread]: is success!
+parsecfg.py DEBUG sub module [txburst]:
+parsecfg.py DEBUG txburst         target:		['txburst.so', 'txburst.conf']
+parsecfg.py DEBUG txburst         target_attr:	['file', 'file']
+parsecfg.py DEBUG txburst         cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG txburst         move:			'yes'
+parsecfg.py DEBUG txburst         deps:			''
+parsecfg.py DEBUG txburst         fulltdir:		'/mtx_5x9_panlin/txburst'
+parsecfg.py DEBUG txburst         fullcdir:		'/root/mtxcode/head/mtx/code/plugin/txburst'
+parsecfg.py DEBUG txburst         movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/txburst/txburst.so /mtx_5x9_panlin/txburst -rf', 'cp /root/mtxcode/head/mtx/code/plugin/txburst/txburst.conf /mtx_5x9_panlin/txburst -rf']
+parsecfg.py INFO [txburst]: is success!
+parsecfg.py DEBUG sub module [libspooky]:
+parsecfg.py DEBUG libspooky       target:		['libspookyv2.so']
+parsecfg.py DEBUG libspooky       target_attr:	['file']
+parsecfg.py DEBUG libspooky       cmd:			['make clean', 'make']
+parsecfg.py DEBUG libspooky       move:			'no'
+parsecfg.py DEBUG libspooky       deps:			''
+parsecfg.py DEBUG libspooky       fulltdir:		'/mtx_5x9_panlin/'
+parsecfg.py DEBUG libspooky       fullcdir:		'/root/mtxcode/head/mtx/code/plugin/zfd/spooky'
+parsecfg.py DEBUG libspooky       movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/zfd/spooky/libspookyv2.so /mtx_5x9_panlin/ -rf']
+parsecfg.py INFO [libspooky]: is success!
+parsecfg.py DEBUG sub module [zfd_tool]:
+parsecfg.py DEBUG zfd_tool        target:		['zfd_file', 'udpserver']
+parsecfg.py DEBUG zfd_tool        target_attr:	['file', 'file']
+parsecfg.py DEBUG zfd_tool        cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG zfd_tool        move:			'yes'
+parsecfg.py DEBUG zfd_tool        deps:			''
+parsecfg.py DEBUG zfd_tool        fulltdir:		'/mtx_5x9_panlin/./'
+parsecfg.py DEBUG zfd_tool        fullcdir:		'/root/mtxcode/head/mtx/code/plugin/zfd/tools'
+parsecfg.py DEBUG zfd_tool        movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/zfd/tools/zfd_file /mtx_5x9_panlin/./ -rf', 'cp /root/mtxcode/head/mtx/code/plugin/zfd/tools/udpserver /mtx_5x9_panlin/./ -rf']
+parsecfg.py INFO [zfd_tool]: is success!
+parsecfg.py DEBUG sub module [zfd]:
+parsecfg.py DEBUG zfd             target:		['zfd.so', 'zfd.conf']
+parsecfg.py DEBUG zfd             target_attr:	['file', 'file']
+parsecfg.py DEBUG zfd             cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG zfd             move:			'yes'
+parsecfg.py DEBUG zfd             deps:			['libspooky', 'zfd_tool']
+parsecfg.py DEBUG zfd             fulltdir:		'/mtx_5x9_panlin/zfd'
+parsecfg.py DEBUG zfd             fullcdir:		'/root/mtxcode/head/mtx/code/plugin/zfd'
+parsecfg.py DEBUG zfd             movecmd:		['cp /root/mtxcode/head/mtx/code/plugin/zfd/zfd.so /mtx_5x9_panlin/zfd -rf', 'cp /root/mtxcode/head/mtx/code/plugin/zfd/zfd.conf /mtx_5x9_panlin/zfd -rf']
+parsecfg.py INFO [zfd]: is success!
+parsecfg.py DEBUG sub module [so]:
+parsecfg.py DEBUG so              target:		['so']
+parsecfg.py DEBUG so              target_attr:	['dir']
+parsecfg.py DEBUG so              cmd:			''
+parsecfg.py DEBUG so              move:			'yes'
+parsecfg.py DEBUG so              deps:			''
+parsecfg.py DEBUG so              fulltdir:		'/mtx_5x9_panlin/./'
+parsecfg.py DEBUG so              fullcdir:		'/root/mtxcode/head/mtx/code/ssnalgo/httpfs_eb2'
+parsecfg.py DEBUG so              movecmd:		['cp /root/mtxcode/head/mtx/code/ssnalgo/httpfs_eb2/so /mtx_5x9_panlin/./ -rf']
+parsecfg.py INFO [so]: is success!
