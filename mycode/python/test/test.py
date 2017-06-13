@@ -1,8 +1,14 @@
 #!/usr/bin/env python
+#-*- coding: utf-8 -*-
 
 '''
-    hello world!
+	first python 
+	hello world
 '''
 
-print "hello world!";
+def hello():
+	print "hello world!";
+
+if __name__ == "__main__":
+	hello()
 
