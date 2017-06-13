@@ -1,0 +1,95 @@
+parsecfg.py DEBUG base module [BASE]:
+parsecfg.py DEBUG base tdir:			'/mtx_5x9_panlin/'
+parsecfg.py DEBUG base cdir:			'/root/mtxcode/head/mtx/code/'
+parsecfg.py DEBUG base main:			'mtx_5x9'
+parsecfg.py DEBUG base sub:			['mtx', 'smtpfs_eb', 'smtpfs', 'pop3fs_eb', 'pop3fs', 'imapfs_eb', 'imapfs', 'httpfs_eb', 'httpfs', 'conn', 'netflow', 'ftpctl', 'tcpstream', 'charset', 'dns', 'dns_block', 'dpdkprx', 'netflow_icmp', 'map', 'mapbase', 'nasm', 'perform', 'spooky', 'tcp_block', 'tcpdump', 'record2k', 'record5k', 'dpdk', 'dpdkstat', 'filefilter', 'fileidt', 'geoip', 'hsctd', 'mnthread', 'txburst', 'zfd']
+parsecfg.py DEBUG sub module [mtx]:
+parsecfg.py DEBUG mtx             target:		['mtx']
+parsecfg.py DEBUG mtx             cmd:			['make clean', 'make deps', 'make debug']
+parsecfg.py DEBUG mtx             move:			'yes'
+parsecfg.py DEBUG mtx             deps:			''
+parsecfg.py DEBUG mtx             fulltdir:		'/mtx_5x9_panlin/./'
+parsecfg.py DEBUG mtx             fullcdir:		'/root/mtxcode/head/mtx/code/mtx'
+parsecfg.py DEBUG mtx             movecmd:		['cp /root/mtxcode/head/mtx/code/mtx/mtx /mtx_5x9_panlin/./ -rf']
+parsecfg.py INFO [mtx]: is success!
+parsecfg.py DEBUG sub module [smtpfs_eb]:
+parsecfg.py DEBUG smtpfs_eb       target:		['smtpfs_eb.so']
+parsecfg.py DEBUG smtpfs_eb       cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG smtpfs_eb       move:			'yes'
+parsecfg.py DEBUG smtpfs_eb       deps:			''
+parsecfg.py DEBUG smtpfs_eb       fulltdir:		'/mtx_5x9_panlin/ssnalgo'
+parsecfg.py DEBUG smtpfs_eb       fullcdir:		'/root/mtxcode/head/mtx/code/ssnalgo/smtpfs_eb2'
+parsecfg.py DEBUG smtpfs_eb       movecmd:		['cp /root/mtxcode/head/mtx/code/ssnalgo/smtpfs_eb2/smtpfs_eb.so /mtx_5x9_panlin/ssnalgo -rf']
+parsecfg.py INFO [smtpfs_eb]: is success!
+parsecfg.py DEBUG sub module [smtpfs]:
+parsecfg.py DEBUG smtpfs          target:		['smtpfs.so']
+parsecfg.py DEBUG smtpfs          cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG smtpfs          move:			'yes'
+parsecfg.py DEBUG smtpfs          deps:			''
+parsecfg.py DEBUG smtpfs          fulltdir:		'/mtx_5x9_panlin/ssnalgo'
+parsecfg.py DEBUG smtpfs          fullcdir:		'/root/mtxcode/head/mtx/code/ssnalgo/smtpfs'
+parsecfg.py DEBUG smtpfs          movecmd:		['cp /root/mtxcode/head/mtx/code/ssnalgo/smtpfs/smtpfs.so /mtx_5x9_panlin/ssnalgo -rf']
+parsecfg.py INFO [smtpfs]: is success!
+parsecfg.py DEBUG sub module [pop3fs_eb]:
+parsecfg.py DEBUG pop3fs_eb       target:		['pop3fs_eb.so']
+parsecfg.py DEBUG pop3fs_eb       cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG pop3fs_eb       move:			'yes'
+parsecfg.py DEBUG pop3fs_eb       deps:			''
+parsecfg.py DEBUG pop3fs_eb       fulltdir:		'/mtx_5x9_panlin/ssnalgo'
+parsecfg.py DEBUG pop3fs_eb       fullcdir:		'/root/mtxcode/head/mtx/code/ssnalgo/pop3fs_eb2'
+parsecfg.py DEBUG pop3fs_eb       movecmd:		['cp /root/mtxcode/head/mtx/code/ssnalgo/pop3fs_eb2/pop3fs_eb.so /mtx_5x9_panlin/ssnalgo -rf']
+parsecfg.py INFO [pop3fs_eb]: is success!
+parsecfg.py DEBUG sub module [pop3fs]:
+parsecfg.py DEBUG pop3fs          target:		['pop3fs.so']
+parsecfg.py DEBUG pop3fs          cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG pop3fs          move:			'yes'
+parsecfg.py DEBUG pop3fs          deps:			''
+parsecfg.py DEBUG pop3fs          fulltdir:		'/mtx_5x9_panlin/ssnalgo'
+parsecfg.py DEBUG pop3fs          fullcdir:		'/root/mtxcode/head/mtx/code/ssnalgo/pop3fs'
+parsecfg.py DEBUG pop3fs          movecmd:		['cp /root/mtxcode/head/mtx/code/ssnalgo/pop3fs/pop3fs.so /mtx_5x9_panlin/ssnalgo -rf']
+parsecfg.py INFO [pop3fs]: is success!
+parsecfg.py DEBUG sub module [imapfs_eb]:
+parsecfg.py DEBUG imapfs_eb       target:		['imapfs_eb.so']
+parsecfg.py DEBUG imapfs_eb       cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG imapfs_eb       move:			'yes'
+parsecfg.py DEBUG imapfs_eb       deps:			''
+parsecfg.py DEBUG imapfs_eb       fulltdir:		'/mtx_5x9_panlin/ssnalgo'
+parsecfg.py DEBUG imapfs_eb       fullcdir:		'/root/mtxcode/head/mtx/code/ssnalgo/imapfs_eb2'
+parsecfg.py DEBUG imapfs_eb       movecmd:		['cp /root/mtxcode/head/mtx/code/ssnalgo/imapfs_eb2/imapfs_eb.so /mtx_5x9_panlin/ssnalgo -rf']
+parsecfg.py INFO [imapfs_eb]: is success!
+parsecfg.py DEBUG sub module [imapfs]:
+parsecfg.py DEBUG imapfs          target:		['imapfs.so']
+parsecfg.py DEBUG imapfs          cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG imapfs          move:			'yes'
+parsecfg.py DEBUG imapfs          deps:			''
+parsecfg.py DEBUG imapfs          fulltdir:		'/mtx_5x9_panlin/ssnalgo'
+parsecfg.py DEBUG imapfs          fullcdir:		'/root/mtxcode/head/mtx/code/ssnalgo/imapfs'
+parsecfg.py DEBUG imapfs          movecmd:		['cp /root/mtxcode/head/mtx/code/ssnalgo/imapfs/imapfs.so /mtx_5x9_panlin/ssnalgo -rf']
+parsecfg.py INFO [imapfs]: is success!
+parsecfg.py DEBUG sub module [httpfs_eb]:
+parsecfg.py DEBUG httpfs_eb       target:		['httpfs_eb.so']
+parsecfg.py DEBUG httpfs_eb       cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG httpfs_eb       move:			'yes'
+parsecfg.py DEBUG httpfs_eb       deps:			''
+parsecfg.py DEBUG httpfs_eb       fulltdir:		'/mtx_5x9_panlin/ssnalgo'
+parsecfg.py DEBUG httpfs_eb       fullcdir:		'/root/mtxcode/head/mtx/code/ssnalgo/httpfs_eb2'
+parsecfg.py DEBUG httpfs_eb       movecmd:		['cp /root/mtxcode/head/mtx/code/ssnalgo/httpfs_eb2/httpfs_eb.so /mtx_5x9_panlin/ssnalgo -rf']
+parsecfg.py INFO [httpfs_eb]: is success!
+parsecfg.py DEBUG sub module [httpfs]:
+parsecfg.py DEBUG httpfs          target:		['httpfs.so']
+parsecfg.py DEBUG httpfs          cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG httpfs          move:			'yes'
+parsecfg.py DEBUG httpfs          deps:			''
+parsecfg.py DEBUG httpfs          fulltdir:		'/mtx_5x9_panlin/ssnalgo'
+parsecfg.py DEBUG httpfs          fullcdir:		'/root/mtxcode/head/mtx/code/ssnalgo/httpfs_509'
+parsecfg.py DEBUG httpfs          movecmd:		['cp /root/mtxcode/head/mtx/code/ssnalgo/httpfs_509/httpfs.so /mtx_5x9_panlin/ssnalgo -rf']
+parsecfg.py INFO [httpfs]: is success!
+parsecfg.py DEBUG sub module [conn]:
+parsecfg.py DEBUG conn            target:		['conn.so']
+parsecfg.py DEBUG conn            cmd:			['make clean', 'make debug']
+parsecfg.py DEBUG conn            move:			'yes'
+parsecfg.py DEBUG conn            deps:			''
+parsecfg.py DEBUG conn            fulltdir:		'/mtx_5x9_panlin/ssnalgo'
+parsecfg.py DEBUG conn            fullcdir:		'/root/mtxcode/head/mtx/code/ssnalgo/conn'
+parsecfg.py DEBUG conn            movecmd:		['cp /root/mtxcode/head/mtx/code/ssnalgo/conn/conn.so /mtx_5x9_panlin/ssnalgo -rf']
+parsecfg.py INFO [conn]: is success!
